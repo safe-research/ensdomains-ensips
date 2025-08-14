@@ -65,7 +65,7 @@ F/dquF3/CDUbjWGW95f0ierQ2ycMykpDoy4iDw==
 
 This corresponds to 412 bytes of data (and 640 bytes when encoded in ASCII armor format). While this public key is reasonably small to be stored on-chain (because it represents an Ed25519 root public key with a single Curve25519 encryption sub-key), others that may use RSA PGP keys have much larger exported public keys. For example, [Linus Torvald's PGP key](https://git.kernel.org/pub/scm/docs/kernel/pgpkeys.git/plain/keys/79BE3E4300411886.asc) that is used for signing Linux kernel commits and releases is 29873 bytes of data (and 40822 bytes when encoded in ASCII armor format), which is unreasonably large for on-chain storage.
 
-It would also have been possible to store the a URL to an OpenPGP public key, allowing the full PGP private key to be discoverable through ENS records. The proposal instead opted for just storing the fingerprint as there already are existing means for hosting and sharing PGP keys (such as GitHub, Git repositories, and key servers), and have ENS instead be a source of truth for which PGP key matches a given domain profile and identity.
+It would also have been possible to store the URL to an OpenPGP public key, allowing the full PGP private key to be discoverable through ENS records. The proposal instead opted for just storing the fingerprint as there already are existing means for hosting and sharing PGP keys (such as GitHub, Git repositories, and key servers), and have ENS instead be a source of truth for which PGP key matches a given domain profile and identity.
 
 ## Backwards Compatibility
 
